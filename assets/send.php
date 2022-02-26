@@ -1,17 +1,16 @@
 <?php
-$to = "shubhumnegi734@gmail.com";
+$to = "marketing@woggroup.com";
 $name = $_REQUEST['name'] ;
 $phone = $_REQUEST['phone'] ;
 $email = $_REQUEST['email'] ;
-$quan = $_REQUEST['quan'];
 $subject = "Message from: $name";
-$headers = "shubhmnegi734@gmail.com";
-$body = "From: $name \n\n Email: $email \n\n Phone: $phone \n\n message : $quan ";
+$headers = "marketing@woggroup.com";
+$body = "From: $name \n\n Email: $email \n\n Phone: $phone \n\n ";
 $sent = mail($to, $subject, $body, $headers) ;
 if($sent)
-{echo "<script language=javascript>window.location = 'index.html';</script>";}
+{echo "<script language=javascript>window.location = 'https://www.woggroup.com/';</script>";}
 else
-{echo "<script language=javascript>window.location = 'index.html';</script>";}
+{echo "<script language=javascript>window.location = 'https://www.woggroup.com/';</script>";}
 
  $retval = mail ($to,$subject,$message,$header);
  if( $retval == true ) {
