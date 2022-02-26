@@ -190,24 +190,3 @@ $(document).ready(function(){
     }
  
 });
- /*
-
-<?php
-
-$to = "info@woggroup.com,marketing@woggroup.com";
-$name = $_REQUEST['name'] ;
-$phone = $_REQUEST['phone'] ;
-$email = $_REQUEST['email'] ;
-$quan = $_REQUEST['quan'] ;
-$subject = "Message from: $name";
-$headers = "info@woggroup.com";
-$body = "From: $name \n\n Email: $email \n\n Phone: $phone \n\n Quantity: $quan\n\n";
-$sent = mail($to, $subject, $body, $headers) ;
-if($sent)
-{echo "<script language=javascript>window.location = 'index.html';</script>";}
-else
-{echo "<script language=javascript>window.location = 'index.html';</script>";}
-?>
-
-
- */
