@@ -1,0 +1,238 @@
+$black:#000;
+$white:#fff;
+$primery-color:#6A6A6A;
+$secondary-color:#1C487E;
+$link-primery-color:#E63339;
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    ul{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        list-style: none;
+    }
+    a{
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+    }
+}
+
+
+
+// header section starts from here
+
+header{
+    background: $white;
+    box-shadow: 0px 0px 5px 2px #ddd4d4;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    .nav-button{
+        display: none;
+    }
+    .logo{
+        img{
+            max-width: 90%
+        }
+    }
+    nav{
+        margin-left: 20px;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                a{
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: $black;
+                    padding-bottom: 30px;
+                    i{
+                        font-size: 12px;
+                        margin-left: 3px;                        
+                    }
+                }                
+            }
+            .header-nav-about{
+                position: relative;
+                ul{
+                    border: 1px solid #eee;
+                    border-radius: 5px;
+                    position: absolute;
+                    top: 80px;
+                    left: -22px;
+                    width: 160px;
+                    background-color: $white;
+                    flex-direction: column;
+                    visibility: hidden;
+                    display: flex;
+                    li{
+                        a{
+                            display: block;
+                            padding: 8px 10px 8px 20px;                            
+                            font-size: 14px;
+                        }                        
+                        &:first-child{
+                            border-bottom: 1px solid #eee;
+                        }
+                    }
+                }
+                &:hover{
+                    ul{
+                        transition: all 0.3s ease;
+                        visibility: visible;
+                        top: 50px;
+                    }
+                }
+            }
+            .header-nav-operations{
+                position: relative;
+                .deep-ul{
+                    border-radius: 5px;
+                    position: absolute;                    
+                    display: flex;
+                    background-color: #fff;
+                    border: 1px solid #eee;
+                    visibility: hidden;
+                    top:100px;
+                    left: -190px;
+                    .sub-li{                     
+                        .sub-deep-ul{
+                            width: 230px;
+                            display: flex;
+                            flex-direction: column; 
+                            .sub-deep-li{
+                                border-top: 1px solid #eee;
+                                a{
+                                    // background-color: $white;
+                                    display: block;
+                                    padding: 8px 10px 8px 20px;                            
+                                    font-size: 14px;
+                                }
+                                &:first-child{
+                                    border-top:none;
+                                }
+                            }                           
+                        }
+                        &:first-child{
+                            border-right: 1px solid #eee;
+                        }
+                    }
+                }
+                &:hover{
+                    .deep-ul{
+                        transition: all 0.3s ease;
+                        visibility: visible;
+                        top: 50px;
+                    }
+                }               
+            }
+        }
+    }
+    .header-icons{
+        padding-left: 35px; 
+        margin-top: 10px;      
+        a{
+            img{
+                margin-left: 15px;
+                width: 20px;           
+            }
+        }
+    }
+}
+
+// header section ends here
+
+
+
+.about{
+    margin: 130px 0px 50px 0;
+    .heading{
+        span{
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            font-weight: bold;            
+        }
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            top: 12px;
+            left: 20px;
+            width: 50px;
+            height: 3px;
+            background-color: $link-primery-color;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            top: 12px;
+            right: 20px;
+            width: 50px;
+            height: 3px;
+            background-color: $link-primery-color;
+        }
+    }
+    .about-tagline{
+        span{
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            color: $primery-color;
+        }
+    }
+    .about-us{
+        h2{
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: $secondary-color;
+        }
+    }
+    .about-discription{
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            color: $primery-color;
+        } 
+        .focus{
+            font-weight: bold;
+        }       
+    }
+    img{
+        margin-top: 20px;
+        max-width: 100%;
+    }   
+}
+
+
+
+
+.copyright{    
+    margin-top: 100px;
+    background-color: $secondary-color;
+    p{
+        font-family: 'Roboto', sans-serif;
+        margin-top: 20px;
+        margin-left: 8%;
+        display: inline-block;
+        color: $white;
+        span{
+            margin-left: 5px;
+            font-family: 'Roboto', sans-serif;
+            color: $white;
+            font-weight: bold;
+        }
+    }
+    .address{
+        margin-left: 150px;
+        font-family: 'Roboto', sans-serif;
+        color: $white;
+    }
+}

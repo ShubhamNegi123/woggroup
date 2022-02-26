@@ -479,7 +479,6 @@ header .header-icons a img {
   margin-top: 8px;
   font-size: 14px;
   color: #6A6A6A;
-  min-height: 65px;
 }
 
 .testimonials .review .item1 {
@@ -641,7 +640,7 @@ header .header-icons a img {
 
 .location .world-location {
   overflow: hidden;
-  height: 600px;
+  height: 550px;
 }
 
 .location .world-location video {
@@ -659,7 +658,7 @@ header .header-icons a img {
 footer {
   position: relative;
   padding-bottom: 130px;
-  background: url(../images/footer-bg.jpg);
+  background: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190619/ourmid/pngtree-blue-glow-background-business-card-design-template-image_132608.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
