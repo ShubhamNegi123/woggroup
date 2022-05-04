@@ -1,70 +1,65 @@
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0px;
   padding: 0px;
 }
-
 * ul {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
   list-style: none;
 }
-
 * a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
+}
+
+.whatsaap-icon {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+}
+.whatsaap-icon i {
+  font-size: 40px;
+  color: #1bd741;
 }
 
 header {
   background: #fff;
-  -webkit-box-shadow: 0px 0px 5px 2px #ddd4d4;
-          box-shadow: 0px 0px 5px 2px #ddd4d4;
+  box-shadow: 0px 0px 5px 2px #ddd4d4;
   z-index: 9999;
   position: fixed;
   width: 100%;
   top: 0px;
   left: 0px;
 }
-
 header .nav-button {
   display: none;
 }
-
 header .logo img {
   max-width: 90%;
 }
-
 header nav {
   margin-left: 20px;
 }
-
 header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 header nav ul li a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: bold;
   color: #000;
   padding-bottom: 30px;
 }
-
 header nav ul li a i {
   font-size: 12px;
   margin-left: 3px;
 }
-
 header nav ul .header-nav-about {
   position: relative;
 }
-
 header nav ul .header-nav-about ul {
   border: 1px solid #eee;
   border-radius: 5px;
@@ -73,42 +68,29 @@ header nav ul .header-nav-about ul {
   left: -22px;
   width: 160px;
   background-color: #fff;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   visibility: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 header nav ul .header-nav-about ul li a {
   display: block;
   padding: 8px 10px 8px 20px;
   font-size: 14px;
 }
-
 header nav ul .header-nav-about ul li:first-child {
   border-bottom: 1px solid #eee;
 }
-
 header nav ul .header-nav-about:hover ul {
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   visibility: visible;
   top: 50px;
 }
-
 header nav ul .header-nav-operations {
   position: relative;
 }
-
 header nav ul .header-nav-operations .deep-ul {
   border-radius: 5px;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #fff;
   border: 1px solid #eee;
@@ -116,48 +98,34 @@ header nav ul .header-nav-operations .deep-ul {
   top: 100px;
   left: -190px;
 }
-
 header nav ul .header-nav-operations .deep-ul .sub-li .sub-deep-ul {
   width: 230px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 header nav ul .header-nav-operations .deep-ul .sub-li .sub-deep-ul .sub-deep-li {
   border-top: 1px solid #eee;
 }
-
 header nav ul .header-nav-operations .deep-ul .sub-li .sub-deep-ul .sub-deep-li a {
   display: block;
   padding: 8px 10px 8px 20px;
   font-size: 14px;
 }
-
 header nav ul .header-nav-operations .deep-ul .sub-li .sub-deep-ul .sub-deep-li:first-child {
   border-top: none;
 }
-
 header nav ul .header-nav-operations .deep-ul .sub-li:first-child {
   border-right: 1px solid #eee;
 }
-
 header nav ul .header-nav-operations:hover .deep-ul {
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   visibility: visible;
   top: 50px;
 }
-
 header .header-icons {
   padding-left: 35px;
   margin-top: 10px;
 }
-
 header .header-icons a img {
   margin-left: 15px;
   width: 20px;
@@ -166,94 +134,79 @@ header .header-icons a img {
 .about {
   margin: 130px 0px 50px 0;
 }
-
 .about .heading {
   position: relative;
 }
-
 .about .heading span {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: bold;
 }
-
 .about .heading::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 12px;
   left: 20px;
   width: 50px;
   height: 3px;
   background-color: #E63339;
 }
-
 .about .heading::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 12px;
   right: 20px;
   width: 50px;
   height: 3px;
   background-color: #E63339;
 }
-
 .about .about-tagline span {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: bold;
   color: #6A6A6A;
 }
-
 .about .about-us h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #1C487E;
 }
-
 .about .about-discription p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #6A6A6A;
 }
-
 .about img {
   margin-top: 20px;
   max-width: 100%;
 }
-
 .about .footer-list ul li {
   color: #6A6A6A;
   font-size: 14px;
 }
-
 .about .footer-list ul li i {
   margin-right: 10px;
 }
 
 .copyright {
+  display: flex;
+  justify-content: space-around;
   margin-top: 100px;
   background-color: #1C487E;
 }
-
 .copyright p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 20px;
-  margin-left: 8%;
   display: inline-block;
   color: #fff;
 }
-
 .copyright p span {
-  margin-left: 5px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #fff;
   font-weight: bold;
 }
-
 .copyright .address {
-  margin-left: 150px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #fff;
-}
-/*# sourceMappingURL=mobile-water-plant.css.map */
+}/*# sourceMappingURL=mobile-water-plant.css.map */

@@ -1,4 +1,13 @@
 $(document).ready(function(){
+
+
+    $('.faq-card').click(function(){
+        $(this).children(".hide-text").slideToggle();          
+    });
+
+
+
+
     getScrollTopValue();
     homeBanner();
     reviewAutoplay();

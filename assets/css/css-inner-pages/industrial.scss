@@ -23,6 +23,16 @@ $link-primery-color:#E63339;
 
 
 
+.whatsaap-icon{
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    i{
+        font-size: 40px;
+        color: #1bd741;    
+    }
+}
+
 // header section starts from here
 
 header{
@@ -188,18 +198,28 @@ header{
         }
     }
     .about-us{
-        h2{
+        h1,h2{
             font-family: 'Roboto', sans-serif;
             font-size: 18px;
             font-weight: bold;
             color: $secondary-color;
         }
+        
     }
     .about-discription{
         p{
             font-family: 'Roboto', sans-serif;
             font-size: 14px;
             color: $primery-color;
+        }
+        ul{
+            padding-left: 20px;
+            list-style: disc ;
+            li{
+                font-size: 14px;
+                margin-bottom: 10px;
+                color: $primery-color;
+            }
         }        
     }
     img{
@@ -302,30 +322,74 @@ header{
 }
 
 
-
+.faq {
+    margin:0px 0px;
+    .faq-heading {
+        font-family: "Roboto", sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        color: #6a6a6a;
+        text-align: center;
+        text-transform: capitalize;
+        margin: 50px 0px;
+        
+    }
+    .faq-toggle-button {
+        background-color: #eee;
+        border: 2px solid #e3e3e3;
+        font-size: 22px;
+        font-weight: bold;
+        color: #6a6a6a;
+        padding: 5px 0px;
+        margin-bottom: 0px;
+        text-transform: capitalize;
+        cursor: pointer;
+        position: relative;
+        padding-left: 10px;
+        i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translate(0%, -50%);
+            font-size: 18px;
+            padding-left: 10px;
+        }
+    }
+    .hide-text {
+        border: 2px solid #e3e3e3;
+        padding: 15px;
+        text-align: justify;
+        color: #6a6a6a;
+        display: none;
+    }
+    .showing {
+        display: block;
+    }
+}
 
 
 
 
 
 .copyright{    
+    display: flex;
+    justify-content: space-around;
     margin-top: 100px;
     background-color: $secondary-color;
     p{
+       
         font-family: 'Roboto', sans-serif;
         margin-top: 20px;
-        margin-left: 8%;
         display: inline-block;
         color: $white;
         span{
-            margin-left: 5px;
             font-family: 'Roboto', sans-serif;
             color: $white;
             font-weight: bold;
         }
     }
     .address{
-        margin-left: 150px;
+        
         font-family: 'Roboto', sans-serif;
         color: $white;
     }

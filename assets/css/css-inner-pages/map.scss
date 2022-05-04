@@ -21,6 +21,18 @@ $link-primery-color:#E63339;
     }
 }
 
+
+
+.whatsaap-icon{
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    i{
+        font-size: 40px;
+        color: #1bd741;    
+    }
+}
+
 // header section starts from here
 
 header{
@@ -205,23 +217,24 @@ header{
     
 }
 .copyright{    
+    display: flex;
+    justify-content: space-around;
     margin-top: 100px;
     background-color: $secondary-color;
     p{
+       
         font-family: 'Roboto', sans-serif;
         margin-top: 20px;
-        margin-left: 8%;
         display: inline-block;
         color: $white;
         span{
-            margin-left: 5px;
             font-family: 'Roboto', sans-serif;
             color: $white;
             font-weight: bold;
         }
     }
     .address{
-        margin-left: 150px;
+        
         font-family: 'Roboto', sans-serif;
         color: $white;
     }
